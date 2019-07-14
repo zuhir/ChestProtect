@@ -1,0 +1,118 @@
+# Aquí puedes editar todos los mensajes de chat
+# Los mensajes de las GUIs se encuentran en <language>_gui.yml
+# Si encuentras algún problema, contacta con el soporte.
+# Página: https://www.spigotmc.org/resources/.53494
+# Discord: https://discord.gg/jF9NJmw
+
+# ###############################
+# Acerca de los codigos de mensajes:
+# Solo funcionan para mensajes en la
+# sección "message" o "command".
+# ###############################
+
+# Puedes usar algunos codigos para establer
+# el mensaje a un title, actionbar o chat. 
+# Como funciona:
+
+# Por ejemplo, queremos mostrar el mensaje como un title:
+# Establece general.noPermission a: '#t#&cNo tienes permiso para hacer eso.' (Pon "#t#" delante)
+# Esto lo hara un title.
+
+# Ademas puedes establecer el tiempo de aparición, de permanencia y de desaparición del title (en segundos):
+# Establece, por ejemplo, general.noPermission a: '#t#!!1!!2!!3!!&cNo tienes permiso para hacer eso.'
+# Esto mostrata el mensaje como un title con un tiempo de
+# aparición de 1 segundo, un tiempo de permanencia de 2 segundos
+# y un tiempo de desaparición de 3 segundos.
+
+# También puedes mostrarlo como un actionbar:
+# Solo agrega "#a#" delante.
+# Si quieres mostrarlo en el chat, no agregues nada
+# delante o usa "#c#".
+
+# También puedes combinar los modos:
+# Establece, por ejemplo, general.noPermission a: '#c#a#t#!!1!!2!!3!!&cNo tienes permiso para hacer eso.'
+# Esto lo mostrara como un mensaje en el chat, un actionbar y un title con un tiempo de (1 seconds),
+# aparición (1 segundo), un tiempo de permanencia (2 segundos) y un tiempo de desaparición (3 segundos)
+# Para cualquier pregunta o problema, por favor contactame por Discord o con un mensaje privado.
+
+
+general:
+  role:
+    owner: '&4Dueño'
+    admin: '&cAdmin'
+    member: '&eMiembro'
+    visitor: '&5Visitante'
+    all: '&dTodos'
+
+help:
+  general:
+    prefix: '&8[&eChestProtect&8] &7Uso: '
+    header: '&7------------<- &5Ayuda de Protección &7Página&6 {page} &8/&e {pages} &7->------------'
+    page: '&7Usa &8/&dProtect help {next} &7para ver la siguiente página.'
+    footer: '&7------------<- &5Ayuda de Protección &7Página&6 {page} &8/&e {pages} &7->------------'
+  command:
+    lock: '&8/&7Protect lock &8- &eBloquear objeto'
+    unlock: '&8/&7Protect unlock &8- &eDesbloquear objeto'
+    trust: '&8/&7Protect trust &8<&aPlayer&8> - &ePermitir jugador'
+    untrust: '&8/&7Protect untrust &8<&aPlayer&8> - &eBloquear jugador'
+    setRole: '&8/&7Protect setrole &8<&aPlayer&8> <&aRole&8> - &eEstablecer rol'
+    menu: '&8/&7Protect menu &8[&aPlayer&8] - &eAbrir menú'
+    exit: '&8/&7Protect exit &8- &eModo salir'
+    help: '&8/&7Protect help &8[&aSite&8] - &ePágina de ayuda'
+    admin:
+      import: '&8/&7Protect import &8<&aPlugin&8> &8- &eImportar datos de otros plugin'
+      reload: '&8/&7Protect reload &8<&aConfig&8, &aLanguage&8> - &eRecargar configuración'
+      admin: '&8/&7Protect admin &8<&aAction&8> - &eEjecutar acciones de admin'
+      about: '&8/&7Protect about &8- &eMostrar informacion de SuperProtect'
+
+message:
+  no-permission: '&8[&eChestProtect&8] &cNo tienes permiso para hacer eso. &7Necesitas el permiso&b {permission}&7.'
+  world-invalid: '&8[&eChestProtect&8] &cEsto esta desactivado en este mundo. &7Un administrador debe activarlo en la configuración. Nombre del mundo:&b {world}'
+  block-invalid: '&8[&eChestProtect&8] &cNo puedes proteger este bloque. &7Un administrador debe agregarlo en la configuración. Nombre del bloque:&b {block}'
+  noaccess:
+    protection: '&8[&eChestProtect&8] &cNo puedes hacer eso en esta protección. &7Le pertenece a&b {player}&7.'
+    action: '&8[&eChestProtect&8] &cNo puedes realizar esta acción en esta protección. &7El dueño&b {player} &7debe darte permiso para hacerlo.'
+  event:
+    open-owner: '&8[&eChestProtect&8] &7Este bloque &bte pertenece&7.'
+    open-trusted: '&8[&eChestProtect&8] &7Este bloque le pertenece a&b {player}&7.'
+    protectable: '&8[&eChestProtect&8] &7Este bloque puede ser protegido. Usa &8/&eLock &7para bloquearlo.'
+
+command:
+  general:
+    money-cost: '&8[&eChestProtect&8] &cNo tienes suficiente dinero para pagar. &7Necesitas&b ${cost}&7.'
+    pos-not-allowed: '&8[&eChestProtect&8] &cNo puedes hacer eso en este lugar. &7Ve a otro lado.'
+    player-not-exist: '&8[&eChestProtect&8] &cNo hay un jugador llamado&e {player}&c. &7Por favor revisa el nombre.'
+    not-protected: '&8[&eChestProtect&8] &cNo puedes hacer eso. &7Este bloque no esta protegido.'
+    player-untrusted: '&8[&eChestProtect&8] &cNo puedes hacer eso. &7El jugador&b {player} &7no esta permitido en esta protección.'
+  help:
+    help: '&8[&eChestProtect&8] &7Usa &8/&aProtect help &7para obtener ayuda.'
+    cmd-not-exist: '&8[&eChestProtect&8] &cEse subcomando no existe. &7El comando&b {command} &7no existe.'
+    page-not-exist: '&8[&eChestProtect&8] &cLa página&e {page} &cno existe. &7¿Error de tipografía?'
+  lock:
+    activated: '#t#!!1!!1!!1!!&7Modo-Bloqueo:;;&aActivado'
+    deactivated: '#t#!!1!!1!!1!!&7Modo-Bloqueo:;;&cDesactivado'
+    already: '&8[&eChestProtect&8] &No puedes proteger este bloque. &7Ya esta protegido.'
+    max-protections: '&8[&eChestProtect&8] &cNo puedes crear más protecciones. &7El máximo para ti es&b {max}&7. Contacta a un administrador para más información.'
+    success: '&8[&eChestProtect&8] &7Bloque protegido correctamente por&b ${cost}&7.'
+  unlock:
+    activated: '#t#!!1!!1!!1!!&7Unlock-Mode:;;&aActivated'
+    deactivated: '#t#!!1!!1!!1!!&7Unlock-Mode:;;&cDeactivated'
+    success: '&8[&eChestProtect&8] &7Successful unlocked this objective.'
+  trust:
+    activated: '#t#!!1!!1!!1!!&7Modo-Permitir:;;&aActivado'
+    deactivated: '#t#!!1!!1!!1!!&7Modo-Permitir:;;&cDesactivado'
+    already: '&8[&eChestProtect&8] &cNo puedes hacer eso. &7El jugador&b {player} &7ya esta permitido en esta protección.'
+    max-members: '&8[&eChestProtect&8] &cNo puedes agregar más miembros. &7El máximo para ti es&b {max}&7. Contacta a un administrador para más información.'
+    success: '&8[&eChestProtect&8] &7El jugador&b {player} &7ahora esta permitido en esta protección.'
+  untrust:
+    activated: '#t#!!1!!1!!1!!&7Modo-Bloquear:;;&aActivado'
+    deactivated: '#t#!!1!!1!!1!!&7Modo-Bloquear:;;&cDesactivado'
+    success: '&8[&eChestProtect&8] &7El jugador&b {player} &7ha sido bloqueado de esta protección.'
+  setRole:
+    activated: '#t#!!1!!1!!1!!&7Modo-Rol:;;&aActivado'
+    deactivated: '#t#!!1!!1!!1!!&7SetRole-Mode:;;&cDesactivado'
+    role-weight: '&8[&eChestProtect&8] &cNo puedes establecer el rol de ese jugador ya que tiene un rol mayor al tuyo. &7Contacta a alguien con mayor rol para más información.'
+    role-weight-target: '&8[&eChestProtect&8] &cNo puedes editar el rol de ese jugador. &7Su rol es mayor o igual al tuyo.'
+    role-not-exist: '&8[&eChestProtect&8] &cEl rol&e {role} &cno existe. &7¿Error de tipografía?'
+    -success: '&8[&eChestProtect&8] &7Ahora&b {player} &7tiene el rol&b {role}&7.'
+  exit: '#t#&7Modo:;;&cDesactivado'
